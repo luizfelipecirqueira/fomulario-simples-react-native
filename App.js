@@ -3,6 +3,7 @@ import { View, Text, SafeAreaView, StyleSheet, TextInput } from "react-native";
 
 const UselessTextInput = () => {
   const [text, onChangeText] = React.useState("");
+  const [text2, onChangeText2] = React.useState("");
   const [number, onChangeNumber] = React.useState(null);
 
   return (
@@ -15,6 +16,12 @@ const UselessTextInput = () => {
         style={styles.input}
         onChangeText={onChangeText}
         value={text}
+      />
+      <Text style={styles.texto}>Sobrenome:</Text>
+      <TextInput
+        style={styles.input}
+        onChangeText={onChangeText2}
+        value={text2}
       />
       <Text style={styles.texto}>Número:</Text>
       <TextInput
